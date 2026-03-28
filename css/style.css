@@ -1,0 +1,629 @@
+/* fonts family */
+
+:root {
+    --body-font : "Work Sans", sans-serif;
+    --bs-btn-font-family : "Work Sans", sans-serif;
+}
+
+/* fonts color */
+
+:root {
+    --bs-blue: #4BA1A7;
+    --bs-red: #F0756C;
+    --bs-orange: #F5E9E9;
+    --bs-yellow: #EFEAEA;
+    --bs-green: #F5F8F1;
+    --bs-teal: #EFE8EF;
+    --bs-cyan: #F3F3F3;
+    --bs-black: #111111; 
+    --bs-white: #FFFFFF;
+    --bs-gray: #777777; 
+    
+    --bs-link-color: #111111;
+    --bs-link-color-rgb: 17, 17, 17;
+    --bs-link-hover-color: #F0756C;
+    --bs-link-hover-color-rgb: 240, 117, 108;
+    
+    --bs-primary: #F0756C;
+    --bs-primary-rgb: 240, 117, 108;
+    --bs-body-color: #111111;   
+    --bs-info: #C3C3C3; 
+    --bs-light-text-emphasis: #c3c3c3;
+    
+    --swiper-pagination-color: #F0756C;
+}
+
+body , body  [data-bs-theme=light] {
+    --bs-blue: #4BA1A7;
+    --bs-red: #F0756C;
+    --bs-orange: #F5E9E9;
+    --bs-yellow: #EFEAEA;
+    --bs-green: #F5F8F1;
+    --bs-teal: #EFE8EF;
+    --bs-cyan: #F3F3F3;
+    --bs-black: #111111; 
+    --bs-white: #FFFFFF;
+    --bs-gray: #777777;   
+    --bs-info: #C3C3C3;
+}
+
+.btn-primary {
+    --bs-btn-color: var(--bs-black);
+    --bs-btn-bg: var(--bs-orange);
+    --bs-btn-border-color: var(--bs-orange);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-black);
+    --bs-btn-hover-border-color: var(--bs-black);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-bg: var(--bs-black); 
+}
+
+.pagination {
+    --bs-pagination-padding-x: 0.75rem;
+    --bs-pagination-padding-y: 0.375rem;
+    --bs-pagination-font-size: 1rem;
+    --bs-pagination-color: var(--bs-link-color);
+    --bs-pagination-bg: var(--bs-body-bg);
+    --bs-pagination-border-width: var(--bs-border-width);
+    --bs-pagination-border-color: var(--bs-border-color);
+    --bs-pagination-border-radius: var(--bs-border-radius);
+    --bs-pagination-hover-color: var(--bs-link-hover-color);
+    --bs-pagination-hover-bg: var(--bs-black);
+    --bs-pagination-hover-border-color: var(--bs-border-color);
+    --bs-pagination-focus-color: var(--bs-link-hover-color);
+    --bs-pagination-focus-bg: var(--bs-secondary-bg);
+    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-pagination-active-color: var(--bs-black);
+    --bs-pagination-active-bg: #F5E9E9;
+    --bs-pagination-active-border-color: #F5E9E9;
+    --bs-pagination-disabled-color: var(--bs-secondary-color);
+    --bs-pagination-disabled-bg: var(--bs-secondary-bg);
+    --bs-pagination-disabled-border-color: var(--bs-border-color);
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+.bg-gray {
+    background-color: var(--bs-gray) !important;
+}
+
+.bg-yellow {
+    background-color: var(--bs-yellow) !important;
+}
+
+.bg-green {
+    background-color: var(--bs-green) !important;
+}
+
+.bg-teal {
+    background-color: var(--bs-teal) !important;
+}
+
+.navbar-nav a.nav-link:hover {
+    color: var(--bs-primary) !important;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+/* font size */
+h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+.display-1 {
+    font-size: calc(4.375rem + 4.5vw);
+    font-weight: 900 ;
+    font-family: var(--body-font); 
+    line-height: 80%;
+}
+.display-2,
+.display-3,
+.display-4,
+.display-5 {
+    font-weight: 700 ;
+}
+.p-6 {
+    padding: 4rem !important;
+}
+
+/* navbar */
+.navbar svg {
+    color: #111111;
+}
+
+/* banner color */
+
+.banner {
+    color: var(--bs-black);
+}
+
+/* line height */
+
+p.a {
+    line-height: 10%;
+}
+
+.lh-small {
+    line-height: 80%;
+}
+
+.ls-4 {
+    letter-spacing: 0.2rem;
+}
+
+/* masonry */
+.btn.is-checked {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
+/* paragraph color */
+.postf {
+    color: var(--bs-gray);
+}
+
+.postg {
+    color: var(--bs-info);
+}
+
+/* width of container */
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1460px;
+    }
+}
+
+/* testimonial */
+
+.testimonial-card {
+  background: var(--bs-black);
+  color: var(--bs-white);
+}
+
+.testimonial-card .postd {
+    color: var(--bs-red);
+}
+
+
+
+/* 3.5 FAQs
+/*----------------------------------------------*/
+.accordion-item{
+    background: var(--bs-yellow);
+  }
+  h5 button.accordion-button{
+    font-family: var(--body-font);
+    background: var(--bs-yellow);
+  }
+  .accordion-button:focus {
+    border: none;
+    outline: 0;
+    box-shadow: none;
+  }
+  .accordion-button:not(.collapsed) {
+    background: none;
+    box-shadow: none;
+  }
+
+  .accordion-button::after{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m12 13.171l4.95-4.95l1.414 1.415L12 16L5.636 9.636L7.05 8.222z'/%3E%3C/svg%3E");
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m12 13.171l4.95-4.95l1.414 1.415L12 16L5.636 9.636L7.05 8.222z'/%3E%3C/svg%3E");
+    transform: rotate(180deg);
+  }
+
+
+/* styles page */
+/* 
+a {
+    color: rgba(var(--bs-black), var(--bs-link-opacity, 1));
+    text-decoration: none;
+}
+
+a:hover {
+    --bs-black: var(--bs-link-hover-color-rgb);
+} */
+
+/* blog */
+
+.page-link {
+    color: var(--bs-black);
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: var(--bs-pagination-hover-color);
+    background-color: var(--bs-pagination-hover-bg);
+    border-color: var(--bs-pagination-hover-border-color);
+}
+
+.active>.page-link, .page-link.active {
+    z-index: 3;
+    color: var(--bs-pagination-active-color);
+    background-color: var(--bs-pagination-active-bg);
+    border-color: var(--bs-pagination-active-border-color);
+}
+
+.justify-name {
+  display: flex;
+  flex-direction: column; /* Puts the words on two lines */
+  width: 100%;            /* Or set a specific width like 400px to match your design */
+  line-height: 1;         /* Tightens the vertical space between the words */
+}
+
+.justify-name span {
+  display: block;
+  text-align: justify;
+  text-align-last: justify; /* Forces the single word to stretch from left to right */
+  text-transform: uppercase; /* Recommended for that clean, justified look */
+}
+
+.logo-slider{
+  overflow:hidden;
+  padding:30px 0;
+  background: transparent;
+}
+
+.logo-track{
+  display:flex;
+  animation:scroll 20s linear infinite;
+}
+
+.logo-track img{
+  width:80px;
+  margin:0 40px;
+}
+
+@keyframes scroll{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-50%);}
+}
+
+#exampleFormControlTextarea1 {
+    height: 100px !important; /* Change 200px to whatever height you want */
+    min-height: 100px;       /* Prevents the user from making it too small */
+    resize: vertical;        /* Allows the user to only stretch it up and down, not sideways */
+}
+
+/* Container for 9:16 Video */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16; /* Modern way to set 9:16 ratio */
+  background-color: #000;
+  border-radius: 35px; /* Smooth rounded corners */
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* The Video itself */
+.portfolio-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures it fills the 9:16 space perfectly */
+  display: block;
+}
+
+/* Play Button Overlay */
+.play-button-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2); /* Slight dark tint on thumbnail */
+  transition: opacity 0.4s ease;
+  pointer-events: none; /* Allows mouse to hit the video container */
+}
+
+/* Hide play button when video is playing */
+.video-wrapper.is-playing .play-button-overlay {
+  opacity: 0;
+}
+
+/* Center the grid items */
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.play-button-overlay {
+  /* ... other styles ... */
+  pointer-events: none; /* THIS IS KEY - it lets the mouse "pass through" to the video container */
+}
+
+/* --- All Sections: Photography, Graphic Design, & Illustrations Slow Popup --- */
+
+/* 1. Setup the Containers (Frames) to stay perfectly still */
+.photography.portfolio-item,
+.graphicdesign.portfolio-item,
+.illustrations.portfolio-item {
+  position: relative;
+  overflow: visible; 
+  z-index: 1;
+}
+
+/* 2. Target the Images (Photography/Illustrations) AND the Video Wrapper (Graphic Design) */
+.photography.portfolio-item img,
+.illustrations.portfolio-item img,
+.graphicdesign.portfolio-item .video-wrapper {
+  /* Matching your 1.8s very slow transition */
+  transition: transform 1.8s cubic-bezier(0.2, 1, 0.3, 1), box-shadow 0.8s ease;
+  transform: scale(1);
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  z-index: 2;
+  position: relative;
+}
+
+/* 3. Hover Logic - Lifts the element up by 10px and adds a soft shadow */
+.photography.portfolio-item:hover,
+.illustrations.portfolio-item:hover,
+.graphicdesign.portfolio-item:hover {
+  z-index: 99; /* Brings the hovered item to the very front */
+}
+
+.photography.portfolio-item:hover img,
+.illustrations.portfolio-item:hover img,
+.graphicdesign.portfolio-item:hover .video-wrapper {
+  /* Float effect: translateY(-10px) moves it up, scale(1.0) keeps size original */
+  transform: scale(1.0) translateY(-10px); 
+  
+  /* Deep soft shadow for the popup look */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25); 
+  
+  /* Ensures smooth rounded corners during the animation */
+  border-radius: 20px !important; 
+}
+
+/* 4. Global fix for the grid container so popups aren't hidden */
+.grid {
+  overflow: visible !important;
+}
+
+/* Container for the contact section */
+/* --- Corrected Contact Section Style --- */
+.contact-video-section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background-color: #fff !important; 
+}
+
+.contact-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.contact-overlay {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+  /* This makes the video visible again while keeping text readable */
+  background: rgba(255, 255, 255, 0.3); 
+  z-index: 2;
+}
+
+/* Ensure the form remains very clean on top of the video */
+.contact-video-section .custom-form-size {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border: none !important;
+}
+
+/* This makes the Quick Contact, Title, and Paragraph yellow */
+.contact-video-section h6, 
+.contact-video-section h2, 
+.contact-video-section p {
+    color: #000000 !important; /* This is a professional 'Amber/Gold' yellow */
+}
+
+header + section {
+    margin-top: -80px; /* Adjust this to pull the banner closer to the logo */
+}
+
+/* 1. Default state using banner.png */
+.banner {
+    background-image: url(images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* This makes the image swap feel like a smooth fade */
+    transition: background-image 0.5s ease-in-out;
+}
+
+/* 2. Hover state using banner1.png */
+.banner:hover {
+    background-image: url(images/banner1.png);
+}
+
+/* 1. Default Banner Image */
+.banner {
+    background-image: url('../images/banner.png') !important; /* Forces the first image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px; /* Optional: ensures banner has height */
+    
+    /* This makes the image swap feel like a smooth fade instead of a jump */
+    transition: background-image 0.4s ease-in-out;
+}
+
+/* 2. Hover Banner Image */
+.banner:hover {
+    background-image: url('../images/banner1.png') !important; /* Swaps to second image */
+}
+
+.counter {
+    min-width: 1.5ch; /* Keeps the space steady as numbers grow */
+    display: inline-block;
+}
+
+/* 1. Hide the default mouse cursor on EVERY element including videos */
+html, body, *, video, .portfolio-video, .video-wrapper {
+    cursor: none !important;
+}
+
+/* 2. Style the custom ring cursor */
+.custom-cursor {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none; /* Crucial: lets you click the video through the circle */
+    z-index: 999999; /* Higher than any video player */
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s, background-color 0.3s, opacity 0.2s ease;
+    opacity: 1; 
+}
+
+/* 3. React when hovering over interactive items */
+.custom-cursor.hovered {
+    width: 55px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* This class hides the ring when it hits the edges */
+.custom-cursor.hidden {
+    opacity: 0 !important;
+}
+
+.custom-cursor {
+    /* delete border-color: #000000; */
+    border: 2px solid #fff; /* Start with white */
+    mix-blend-mode: difference; /* This magically inverts the color based on what's behind it */
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* This stops the user from being able to 'grab' the image */
+img {
+    -webkit-user-drag: none; /* Works in Chrome/Safari/Edge */
+    user-select: none;       /* Prevents highlighting */
+    -webkit-touch-callout: none; /* Prevents long-press menu on mobile */
+}
+
+/* If you want to be 100% sure the image is 'untouchable' 
+   but still allow the Lightbox to work, add this to the portfolio links */
+.portfolio-item a {
+    display: block;
+    -webkit-user-drag: none;
+}
+
+/* --- Mobile Navbar Fix --- */
+@media (max-width: 991px) {
+    /* 1. Prevent the navbar from breaking into two lines */
+    .navbar > .container-fluid {
+        flex-wrap: nowrap !important;
+        justify-content: space-between !important;
+    }
+
+    /* 2. Hide social icons on mobile (Standard practice) */
+    /* Most phones are not wide enough for a Logo + 10 Icons + Menu */
+    .icon {
+        display: none !important;
+    }
+
+    /* 3. Make logo a bit smaller on mobile to ensure it fits */
+    #logo {
+        max-height: 28px !important;
+    }
+
+    /* 4. Ensure the menu button stays on the right */
+    .navbar-toggler {
+        margin-left: auto !important;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .icon {
+        display: flex !important;
+        padding: 0 !important;
+        gap: 5px !important;
+    }
+    .icon svg {
+        width: 16px !important;
+        height: 16px !important;
+    }
+}
+
+/* Increase vertical gap between footer links */
+#footer ul li {
+    margin-bottom: 20px !important; /* Adjust this number (e.g., 25px or 30px) for a bigger gap */
+}
+
+#footer h6 {
+    margin-bottom: 20px !important; /* Ensures the News and Contact links have the same gap */
+    margin-top: 0;
+}
+
+/* Ensure the links look clean with the new spacing */
+#footer a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Add a subtle lift effect when hovering over the links */
+#footer a:hover {
+    transform: translateX(5px);
+    color: #F0756C !important;
+}
+
+/* Add vertical gap between icons and links in mobile view */
+@media (max-width: 767px) {
+    #footer .info-box {
+        margin-bottom: 50px !important; /* Adjust this number to increase or decrease the gap */
+    }
+}
+
+/* Hide the Lightbox image counter (1 of 10) */
+.lb-number {
+    display: none !important;
+}
+
+/* Custom class to hide items for Isotope */
+.portfolio-hidden {
+  display: none !important;
+}
+
+/* Mobile adjustments for Logo Slider */
+@media (max-width: 767px) {
+  .logo-track img {
+    /* Reduced width for smaller screens */
+    width: 50px; 
+    
+    /* Reduced side gaps from 40px to 15px (30px total between logos) */
+    margin: 0 15px; 
+  }
+
+  .logo-slider {
+    /* Optional: reduce vertical padding on mobile */
+    padding: 15px 0;
+  }
+}
