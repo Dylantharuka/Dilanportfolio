@@ -479,41 +479,53 @@ header + section {
     display: inline-block;
 }
 
-/* 1. Hide the default mouse cursor on EVERY element including videos */
-html, body, *, video, .portfolio-video, .video-wrapper {
-    cursor: none !important;
+/* --- Desktop Only Cursor (Screens wider than 1024px) --- */
+@media (min-width: 1025px) {
+    /* 1. Hide the default mouse cursor ONLY on desktop */
+    html, body, *, video, .portfolio-video, .video-wrapper {
+        cursor: none !important;
+    }
+
+    /* 2. Style the custom ring cursor */
+    .custom-cursor {
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 2px solid #fff; 
+        mix-blend-mode: difference;
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none; 
+        z-index: 999999; 
+        transform: translate(-50%, -50%);
+        transition: width 0.3s, height 0.3s, background-color 0.3s, opacity 0.2s ease;
+        opacity: 1; 
+    }
+
+    /* 3. React when hovering over interactive items */
+    .custom-cursor.hovered {
+        width: 55px;
+        height: 55px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* This class hides the ring when it hits the edges */
+    .custom-cursor.hidden {
+        opacity: 0 !important;
+    }
 }
 
-/* 2. Style the custom ring cursor */
-.custom-cursor {
-    width: 35px;
-    height: 35px;
-    border: 2px solid #000000;
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none; /* Crucial: lets you click the video through the circle */
-    z-index: 999999; /* Higher than any video player */
-    transform: translate(-50%, -50%);
-    transition: width 0.3s, height 0.3s, background-color 0.3s, opacity 0.2s ease;
-    opacity: 1; 
-}
-
-/* 3. React when hovering over interactive items */
-.custom-cursor.hovered {
-    width: 55px;
-    height: 55px;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* This class hides the ring when it hits the edges */
-.custom-cursor.hidden {
-    opacity: 0 !important;
-}
-
-.custom-cursor {
-    /* delete border-color: #000000; */
-    border: 2px solid #fff; /* Start with white */
-    mix-blend-mode: difference; /* This magically inverts the color based on what's behind it */
+/* --- Mobile & Tablet Fix (Screens 1024px and smaller) --- */
+@media (max-width: 1024px) {
+    /* Completely hide the ring element */
+    .custom-cursor {
+        display: none !important;
+    }
+    
+    /* Bring back the default system cursor for touch/tablet users */
+    html, body, *, video, .portfolio-video, .video-wrapper {
+        cursor: auto !important;
+    }
 }
 
 img {
